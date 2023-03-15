@@ -6,7 +6,7 @@ An actualized implementation of a chatbox using chatGPT (because we are in 2023)
 
 To run the program a file named "apikey.txt" must exist
 
-this file requires an "api token" from openai
+this file requires an "api token" from openai ; see https://help.openai.com/en/articles/4936850-where-do-i-find-my-secret-api-key
 
 This implementation will run via the terminal, and write a journal.txt after each conversation
 
