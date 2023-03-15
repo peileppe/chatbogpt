@@ -22,7 +22,7 @@ def main():
             if question_Asked in ("#quit", "#bye", "#exit"):
                 break
             else:
-                completion = openai.Completion.create(engine=model_engine, prompt=question_Asked, max_tokens=1024, n=1,stop=None,temperature=0.7)
+                completion = openai.Completion.create(engine=model_engine, prompt=question_Asked, max_tokens=64, n=1,stop=None,temperature=0.7)
                 msg =completion.choices[0].text
                 print("AI> "+msg)
                 f.write("User> "+question_Asked+"\n")
@@ -30,4 +30,4 @@ def main():
     return
 
 if __name__ == '__main__':                                                                                                                                            
-    main() 
+    main()
